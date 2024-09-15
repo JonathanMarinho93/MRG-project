@@ -26,12 +26,21 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
 </head>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: rgba(144, 238, 144, 0.5); padding: 10px 0;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -48,38 +57,20 @@
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#team">Nosso Time</a></li>
           <li><a href="#constructions">Prêmios</a></li>
+          <li><a href="#trabalhe-conosco">Trabalhe Conosco</a></li>
           <li><a href="#contact">Contatos</a></li>
-          <!--<li><a href="blog.html">Redes Sociais</a></li>-->
-          <!--<li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contatos</a></li>
-        </ul>-->
+        </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
     </div>
   </header>
 
+
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
       <div class="info d-flex align-items-center">
         <div class="container">
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -91,40 +82,39 @@
           </div>
         </div>
       </div>
-
+  
       <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
         </div>
-
+  
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
         </div>
-
+  
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
         </div>
-
+  
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-4.jpg" alt="">
         </div>
-
-        <div class="carousel-item">
+  
+        <!--<div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-5.jpg" alt="">
-        </div>
-
+        </div>-->
+  
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
-
+  
         <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
         </a>
-
       </div>
-
     </section><!-- /Hero Section -->
+  </main>
+  
 
     <!-- Get Started Section
     <section id="get-started" class="get-started section">
@@ -159,46 +149,15 @@
                   Graças à multiplicidade de interesses e competências de nossa equipe, estamos preparados para atender a um amplo, e acima da média, espectro da engenharia estrutural. Trabalhamos com projetos de altíssima complexidade, visando sempre a economia da obra, assim como seu processo construtivo.
                   Vemos o alcance do equilíbrio entre a energia criativa e um planejamento cuidadoso e disciplinado como base para um trabalho de planejamento bem-sucedido. Com amplo conhecimento em materiais e raciocínio conceitual, desempenhamos nossa contribuição para o sucesso de exigentes projetos arquitetônicos. O confronto com as necessidades dos demais participantes no projeto é de fundamental importância para o desenvolvimento de uma solução estrutural que melhor se integre ao conjunto da obra.
                   Gosto pelo trabalho, envolvimento e criatividade resultaram até aqui em muitas ideias inovadoras, que se refletem em nossas obras. Nosso desempenho, entretanto, é avaliado pelo trabalho de planejamento realizado. Documentos e plantas executáveis e corretas são por nós tidas como igualmente fundamentais para um planejamento eficiente, bem como para um claro foco em custos e prazos. Ao final, fica uma obra na qual os objetivos do contratante se tornam realidade com qualidade e economia.</p>
-    
-                <!-- <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-easel flex-shrink-0"></i>
-                  <div>
-                    <h4><a href="" class="stretched-link">Competência e Complexidade em Projetos Estruturais</a></h4>
-                    <p></p>
-                  </div>-->
-                </div><!-- End Icon Box -->
-    
-                <!-- <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bi bi-patch-check flex-shrink-0"></i>
-                  <div>
-                    <h4><a href="" class="stretched-link">Equilíbrio entre Criatividade e Planejamento</a></h4>
-                    <p></p>
-                  </div>-->
-                </div><!-- End Icon Box -->
-    
-                <!-- <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
-                  <i class="bi bi-brightness-high flex-shrink-0"></i>
-                  <div>
-                    <h4><a href="" class="stretched-link">Inovação e Avaliação de Desempenho</a></h4>
-                    <p></p>
-                  </div>-->
-                </div><!-- End Icon Box -->
-    
-                <!-- <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
-                  <i class="bi bi-file-earmark-richtext flex-shrink-0"></i>
-                  <div>
-                    <h4><a href="" class="stretched-link">Precisão em Documentação e Planejamento</a></h4>
-                    <p></p>
-                  </div>-->
+
                 </div><!-- End Icon Box -->
               
-                <!-- Section Title -->
-<div id="team" class="container section-title" data-aos="fade-up">
+                <div id="team" class="container section-title" data-aos="fade-up" style="background-image: url('assets/img/team/fundotime.png'); background-size: cover; background-position: center; padding: 50px 0;">
+                  <h2 style="margin-top: 30px; color: rgb(38, 56, 33);">Nosso Time</h2>
+      
+                
 
-  <h2>Nosso Time</h2>
-
-  <p>Nossa equipe especializada em engenharia de estruturas está pronta para te atender com excelência, oferecendo soluções completas e personalizadas para cada projeto, desde o planejamento até a avaliação final.</p>
-</div><!-- End Section Title -->
+<!-- End Section Title -->
 
 <div class="container">
   <div class="row gy-5 justify-content-center">
@@ -206,37 +165,47 @@
       <div class="member-img">
         <img src="assets/img/team/Dirk.png" class="img-fluid" alt="">
         <div class="social">
-          <!--<a href="#"><i class="bi bi-twitter-x"></i></a>-->
-          <a href="https://www.facebook.com/mrgprojetosestruturais/"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/eng.dirkmader/"><i class="bi bi-instagram"></i></a>
           <a href="https://www.linkedin.com/in/mrg-projetos-estruturais-a5b1a4201/"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
       <div class="member-info text-center">
         <h4>Dirk Mader</h4>
         <span>CEO</span>
-        <p>Dirk Mader é engenheiro formado pela Mackenzie-SP, co-fundador do MRG e ex-sócio da Aluzio D'avilla Engenharia (2001-2024). Premiado em 2015 pela ABECE, destaca-se por sua atuação em projetos estruturais complexos em todo o Brasil.</p>
-      </div>
+        <p>Dirk Mader é um engenheiro com formação pela Universidade Mackenzie-SP e
+          especialização em Gestão Estratégica de Projetos pela Fundação Armando Álvares Penteado
+          - FAAP, além de gestão de projetos e sistemas estruturais pela Escola Politécnica da USP.
+          Co-fundador do escritório de cálculo estrutural MRG e ex-sócio diretor do escritório Aluzio
+          D'avilla Engenharia noqual foi socio no perido 2001 a 2024, onde coordenou inúmeros
+          projetos. Em 2015, foi premiado no evento Talentos Estruturais, organizado pela ABECE com
+          apoio da Gerdau, pela especialização em viabilidade estrutural. Desde então, tem se
+          destacado como engenheiro estrutural de renome, viabilizando projetos de altíssima
+          complexidade e atendendo clientes em todos os estados brasileiros, incluindo as principais
+          construtoras do país.</p>
+        </div>
     </div><!-- End Team Member -->
 
     <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
       <div class="member-img">
         <img src="assets/img/team/Rodrigo.png" class="img-fluid" alt="">
         <div class="social">
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.facebook.com/mrgprojetosestruturais/"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/mrg_projetosestruturais/"><i class="bi bi-instagram"></i></a>
+
           <a href="https://www.linkedin.com/in/mrg-projetos-estruturais-a5b1a4201/"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
       <div class="member-info text-center">
         <h4>Rodrigo Dantas</h4>
         <span>Diretor</span>
-        <p>Engenheiro Civil com MBA em Estruturas e Fundações, ingressou na MRG em 2013 e tornou-se sócio em 2019. Hoje é sócio-diretor, liderando projetos complexos e se destacando como consultor estratégico em engenharia estrutural.</p>
+        <p>Com formação em Engenharia Civil pela Universidade Federal do Rio Grande do Norte e
+          especialização Master of Business Administration - Projetos de Estruturas e Fundações,
+          possui extensa experiência em grandes empreendimentos. Desenvolveu sua carreira de
+          engenheiro de estruturas em empresas e escritórios de renome, deixando sua marca em
+          inúmeros projetos, sempre dedicado à excelência técnica e à inovação. Ingressou na MRG
+          em 2013 e, devido ao seu desempenho e compromisso, tornou-se sócio em 2019. Atualmente,
+          desempenha o papel de sócio-diretor na MRG, liderando equipes e projetos de engenharia
+          com uma contribuição significativa para o desenvolvimento e execução de projetos
+          complexos, consolidando-se como um líder e consultor estratégico de engenharia estrutural.</p>
       </div>
-    </div><!-- End Team Member -->
-  </div>
-</div><!-- End Team Section -->
+    </div><!-- End Team Member --> </section>
 
 
       <!-- Services Section -->
@@ -327,12 +296,12 @@
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Estruturas de concreto armado moldado in loco</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Estruturas de concreto armado</span></li>
               <li><i class="bi bi-check2-all"></i> <span>Estruturas de concreto protendido</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Estruturas de concreto pré-fabricado</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Estruturas mistas de aço e concreto</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Alvenaria estrutural</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Avaliação técnica de projeto</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Estruturas metálica</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Estruturas de alvenaria estrutural</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Estrutura pré-moldado</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Avaliação técnica de projeto (ATP)</span></li>
             </ul>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -601,6 +570,8 @@
             </div>
     
           </div>-->
+
+          
     
         </section><!-- /Alt Services Section -->
 
@@ -664,7 +635,27 @@
         </div>
       </div><!-- End Timeline Item -->
 
+      
+
     </div>
+
+    <!-- Trabalhe Conosco Section -->
+<section id="trabalhe-conosco"  class="trabalhe-conosco" style="background-color: #1b3b1b; padding: 50px 0;">
+  <div class="container text-center">
+    <h2 style="color: #4CAF50; font-size: 36px;">Trabalhe Conosco</h2>
+    <p style="color: #fff; font-size: 18px;">Quer fazer parte da nossa equipe? Envie seu currículo para o nosso e-mail e faça parte do time MRG Engenharia.</p>
+    <p style="color: #fff; font-size: 18px;"></p>
+    
+    <!-- Botão de Enviar Currículo -->
+    <a href="mailto:contact@mrg-saopaulo.com.br" class="btn-enviar" style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 18px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+      Enviar Currículo
+    </a>
+  </div>
+</section>
+<!-- End Trabalhe Conosco Section -->
+
+
+
   </div>
 
 </section><!-- /Constructions Section -->
@@ -889,12 +880,12 @@
         <div class="col-lg-4 col-md-6 footer-links">
           <h4>Áreas de Atuação</h4>
           <ul>
-            <li>Estruturas de concreto armado moldado in loco</li>
+            <li>Estruturas de concreto armado </li>
             <li>Estruturas de concreto protendido</li>
-            <li>Estruturas de concreto pré-fabricado</li>
-            <li>Estruturas mistas de aço e concreto</li>
-            <li>Alvenaria estrutural</li>
-            <li>Avaliação técnica de projeto</li>
+            <li>Estruturas metálica</li>
+            <li>Estruturas Alvenaria estrutural</li>
+            <li>Estruturas pré-moldadp</li>
+            <li>Avaliação técnica de projeto (ATP)</li>
           </ul>
         </div>
 
