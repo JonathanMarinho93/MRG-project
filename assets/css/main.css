@@ -7,7 +7,7 @@
 
 /* Global Colors */
 :root { 
-  --background-color: #ffffff; 
+  --background-color: #d6f5d4; 
   --default-color: #364d59;
   --heading-color: #52565e;
   --accent-color: #3c9c64;
@@ -17,8 +17,8 @@
 
 /* Nav Menu Colors */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.55);  
-  --nav-hover-color: #ffffff; 
+  --nav-color: rgb(244, 255, 244);  
+  --nav-hover-color: #06fa43; 
   --nav-mobile-background-color: #ffffff; 
   --nav-dropdown-background-color: #ffffff;
   --nav-dropdown-color: #212529; 
