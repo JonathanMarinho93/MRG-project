@@ -165,17 +165,35 @@
                 </div>
 
     
-              <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <h3>Quem Somos</h3>
-                <p>A MRG está voltada para a engenharia estrutural no exigente e sofisticado ambiente da arquitetura, com inovadora metodologia aliada a abrangentes soluções estruturais com mais de 12 anos no mercado.
+                <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                  <h3>Quem Somos</h3>
+                  <p id="typing-text"></p> <!-- O parágrafo agora será preenchido pelo efeito de digitação -->
+                </div>
+                
+                <script>
+                  const text = `A MRG está voltada para a engenharia estrutural no exigente e sofisticado ambiente da arquitetura, com inovadora metodologia aliada a abrangentes soluções estruturais com mais de 12 anos no mercado.
                   Graças à multiplicidade de interesses e competências de nossa equipe, estamos preparados para atender a um amplo, e acima da média, espectro da engenharia estrutural. Trabalhamos com projetos de altíssima complexidade, visando sempre a economia da obra, assim como seu processo construtivo.
                   Vemos o alcance do equilíbrio entre a energia criativa e um planejamento cuidadoso e disciplinado como base para um trabalho de planejamento bem-sucedido. Com amplo conhecimento em materiais e raciocínio conceitual, desempenhamos nossa contribuição para o sucesso de exigentes projetos arquitetônicos. O confronto com as necessidades dos demais participantes no projeto é de fundamental importância para o desenvolvimento de uma solução estrutural que melhor se integre ao conjunto da obra.
-                  Gosto pelo trabalho, envolvimento e criatividade resultaram até aqui em muitas ideias inovadoras, que se refletem em nossas obras. Nosso desempenho, entretanto, é avaliado pelo trabalho de planejamento realizado. Documentos e plantas executáveis e corretas são por nós tidas como igualmente fundamentais para um planejamento eficiente, bem como para um claro foco em custos e prazos. Ao final, fica uma obra na qual os objetivos do contratante se tornam realidade com qualidade e economia.</p>
-
+                  Gosto pelo trabalho, envolvimento e criatividade resultaram até aqui em muitas ideias inovadoras, que se refletem em nossas obras. Nosso desempenho, entretanto, é avaliado pelo trabalho de planejamento realizado. Documentos e plantas executáveis e corretas são por nós tidas como igualmente fundamentais para um planejamento eficiente, bem como para um claro foco em custos e prazos. Ao final, fica uma obra na qual os objetivos do contratante se tornam realidade com qualidade e economia.`;
+                
+                  let index = 0;
+                  const speed = 30; // Velocidade de digitação (em ms)
+                
+                  function typeWriter() {
+                    if (index < text.length) {
+                      document.getElementById("typing-text").innerHTML += text.charAt(index);
+                      index++;
+                      setTimeout(typeWriter, speed);
+                    }
+                  }
+                
+                  typeWriter();
+                </script>
+                
                 </div><!-- End Icon Box -->
               
                 <div id="team" class="container section-title" data-aos="fade-up" style="background-image: url('assets/img/team/'); background-size: cover; background-position: center; padding: 50px 0;">
-                  <h2 style="margin-top: 30px; color: rgb(38, 56, 33);">Nosso Time</h2>
+                  <h2 style="margin-top: 30px; color: rgb(98, 210, 67);">Nosso Time</h2>
       
                 
 
@@ -191,7 +209,7 @@
         </div>
       </div>
       <div class="member-info text-center">
-        <h4>Dirk Mader</h4>
+        <h4 style="color: #90ee90;">Dirk Mader</h4>
         <span>CEO</span>
         <p>Dirk Mader é um engenheiro com formação pela Universidade Mackenzie-SP e
           especialização em Gestão Estratégica de Projetos pela Fundação Armando Álvares Penteado
@@ -215,7 +233,7 @@
         </div>
       </div>
       <div class="member-info text-center">
-        <h4>Rodrigo Dantas</h4>
+        <h4 style="color: #90ee90;">Rodrigo Dantas</h4>
         <span>Diretor</span>
         <p>Com formação em Engenharia Civil pela Universidade Federal do Rio Grande do Norte e
           especialização Master of Business Administration - Projetos de Estruturas e Fundações,
@@ -228,113 +246,38 @@
           complexos, consolidando-se como um líder e consultor estratégico de engenharia estrutural.</p>
       </div>
     </div><!-- End Team Member --> </section>
+    
 
-
-      <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Serviços</h2>
-        <p>Oferecemos serviços especializados em engenharia estrutural, atuando em diversos setores de edificações e indústrias, com competências em projetos estruturais, consultoria, controle de qualidade, e avaliação de danos e construções tombadas.</p>
-      </div><!-- End Section Title -->
-
-          </div><!-- End Service Item -->
-
-
-    <!-- Features Section -->
-<section id="features" class="features section">
-  <div class="container">
-    <ul class="nav nav-tabs row g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
-      <li class="nav-item col-3" role="presentation">
-        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
-          <h4>Edificações</h4>
-        </a>
-      </li><!-- End tab nav item -->
-
-      <li class="nav-item col-3" role="presentation">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false" tabindex="-1" role="tab">
-          <h4>Indústria</h4>
-        </a>
-      </li><!-- End tab nav item -->
-
-      <li class="nav-item col-3" role="presentation">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false" tabindex="-1" role="tab">
-          <h4>Áreas de atuação</h4>
-        </a>
-      </li><!-- End tab nav item -->
-    </ul>
-
-    <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-      <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Edificações Especiais</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Centros Culturais</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Centros de Exposições</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Centros de Distribuição e Logística</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Centros de Ensino e Pesquisa</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Data Centers</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Edifícios Comerciais e Residenciais</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Hospitais e Laboratórios</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Hotéis e Resorts</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Retrofit</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Shopping Centers, Supermercados e MegaStores</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Telecomunicações</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="assets/img/features-1.jpg" alt="" class="img-fluid">
-          </div>
+    <div></div> <section id="services" class="services-section"> 
+      <h2>O que fazemos</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="assets/img/fazemos/protedido.jpg" alt="Estrutura de concreto protendido">
+          <h3>Estrutura de concreto protendido</h3>
+          <!--<button>Saiba Mais</button>-->
         </div>
-      </div><!-- End tab content item -->
-
-      <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Agroindústria</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Alimentício e Bebidas</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Automotivo</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Cimento</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Eletroeletrônico</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Farmacêutico</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Indústria Gráfica</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Mineração, Papel e Celulose</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Químico</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Siderúrgica</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Têxtil, Plásticos e Borracha</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Vidros e Energias Renováveis</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="assets/img/features-2.jpg" alt="" class="img-fluid">
-          </div>
+        <div class="service-card">
+          <img src="assets/img/fazemos/premoldada.jpg" alt="Estrutura de concreto pré-moldado">
+          <h3>Estrutura de concreto pré-moldado</h3>
+          <!--<button>Saiba Mais</button>-->
         </div>
-      </div><!-- End tab content item -->
-
-      <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Estruturas de concreto armado</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Estruturas de concreto protendido</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Estruturas metálica</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Estruturas de alvenaria estrutural</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Estrutura pré-moldado</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Avaliação técnica de projeto (ATP)</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
-          </div>
+        <div class="service-card">
+          <img src="assets/img/fazemos/alvenaria.jpg" alt="Estrutura de alvenaria">
+          <h3>Estrutura de alvenaria</h3>
+          <!--<button>Saiba Mais</button>-->
         </div>
-      </div><!-- End tab content item -->
+        <div class="service-card">
+          <img src="assets/img/fazemos/metálica.jpeg" alt="Estrutura metálica">
+          <h3>Estrutura metálica</h3>
+         <!-- <button>Saiba Mais</button>-->
+        </div>
+        <div class="service-card">
+          <img src="assets/img/fazemos/armado.jpg" alt="Estrutura de concreto armado">
+          <h3>Estrutura de concreto armado</h3>
+          <!-- <button>Saiba Mais</button>-->
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-
 
 
      <!-- Projects Section -->
@@ -587,14 +530,7 @@
   
       </section><!-- /Projects Section -->
   
-      </div>
     
-              <!-- </div>
-
-            </div>
-    
-          </div>-->
-
           
     
         </section><!-- /Alt Services Section -->
@@ -602,17 +538,24 @@
     <!-- Constructions Section -->
 <section id="constructions" class="constructions section">
 
+  <style>
+    /* Definir o texto e título totalmente em branco */
+    .text-white {
+      color: white;
+    }
+  </style>
+  
   <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
+  <div class="container section-title text-white" data-aos="fade-up">
     <h2>Nossos prêmios</h2>
     <p>O Prêmio Talento Engenharia Estrutural é uma iniciativa da Gerdau e da ABECE que tem como objetivo reconhecer e premiar os profissionais. Considerado o evento mais importante da engenharia estrutural do país, a cada ano reforça e destaca os maiores talentos da engenharia estrutural brasileira.</p>
   </div><!-- End Section Title -->
-
+  
   <div class="container">
     <div class="timeline d-flex justify-content-between overflow-auto" data-aos="fade-left" data-aos-duration="2000">
-
+  
       <div class="timeline-item text-center">
-        <div class="card-item">
+        <div class="card-item text-white">
           <div class="card-bg"><img src="assets/img/2015.JPG" alt=""></div>
           <div class="card-body">
             <h4 class="card-title">2015</h4>
@@ -622,9 +565,9 @@
           </div>
         </div>
       </div><!-- End Timeline Item -->
-
+  
       <div class="timeline-item text-center">
-        <div class="card-item">
+        <div class="card-item text-white">
           <div class="card-bg"><img src="assets/img/2018.jpg" alt=""></div>
           <div class="card-body">
             <h4 class="card-title">2018</h4>
@@ -634,9 +577,9 @@
           </div>
         </div>
       </div><!-- End Timeline Item -->
-
+  
       <div class="timeline-item text-center">
-        <div class="card-item">
+        <div class="card-item text-white">
           <div class="card-bg"><img src="assets/img/2022.JPG" alt=""></div>
           <div class="card-body">
             <h4 class="card-title">2022</h4>
@@ -646,9 +589,9 @@
           </div>
         </div>
       </div><!-- End Timeline Item -->
-
+  
       <div class="timeline-item text-center">
-        <div class="card-item">
+        <div class="card-item text-white">
           <div class="card-bg"><img src="assets/img/2023.jpg" alt=""></div>
           <div class="card-body">
             <h4 class="card-title">2023</h4>
@@ -658,13 +601,16 @@
           </div>
         </div>
       </div><!-- End Timeline Item -->
-
+  
+    </div><!-- End Timeline -->
+  </div><!-- End Container -->
+  
       
 
     </div>
 
     <!-- Trabalhe Conosco Section -->
-<section id="trabalhe-conosco"  class="trabalhe-conosco" style="background-color: #1b3b1b; padding: 50px 0;">
+<section id="trabalhe-conosco"  class="trabalhe-conosco" style="background-color: #347134; padding: 50px 0;">
   <div class="container text-center">
     <h2 style="color: #4CAF50; font-size: 36px;">Trabalhe Conosco</h2>
     <p style="color: #fff; font-size: 18px;">Quer fazer parte da nossa equipe? Envie seu currículo para o nosso e-mail e faça parte do time MRG Engenharia.</p>
@@ -805,7 +751,7 @@
 
         <div class="col-lg-6">
           <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-            <i class="bi bi-geo-alt"></i>
+            <i class="bi bi-geo-alt" style="color: white;"></i> <!-- Ícone branco -->
             <h3>Localização</h3>
             <p>Rua Sansão Alves dos Santos, 433 – conj. 11 e 12, Brooklin Paulista </p>
           </div>
@@ -813,7 +759,7 @@
 
           <div class="col-lg-3 col-md-6">
           <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-            <i class="bi bi-telephone"></i>
+            <i class="bi bi-telephone" style="color: white;"></i> <!-- Ícone branco -->
             <h3>Telefone</h3>
             <p>(11) 5505-0850</p>
           </div>
@@ -821,7 +767,8 @@
 
           <div class="col-lg-3 col-md-6">
           <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-            <i class="bi bi-envelope"></i>
+            <i class="bi bi-envelope" style="color: white;"></i> <!-- Ícone branco -->
+            
             <h3>E-mail</h3>
             <p>contact@mrg-saopaulo.com.br</p>
           </div>
@@ -947,11 +894,145 @@
 
   </footer>
 
-   <!-- Button whatsapp -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-   <a href="https://wa.me/5511975565299" class="whatsapp-button" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-</a>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
+
+        .chatbot-container {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            display: none;
+        }
+
+        .chat-header {
+            background-color: #2e4536;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .header-info h4 {
+            margin: 0;
+        }
+
+        .header-info p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .chat-content {
+            padding: 15px;
+        }
+
+        .message {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            background-color: #2e4536;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: block;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .chat-footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+    </style>
+
+    <!-- WhatsApp Button -->
+    <a href="#" class="whatsapp-button" id="whatsapp-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+    <!-- Chat Bot Window -->
+    <div id="chatbot-container" class="chatbot-container">
+        <div class="chat-header">
+            <img src="assets/img/team/robo.webp" alt="Avatar" class="avatar">
+            <div class="header-info">
+                <h4>MRG</h4>
+                <p>Online agora</p>
+            </div>
+            <button class="close-btn" id="close-btn">&times;</button>
+        </div>
+        <div class="chat-content">
+            <div class="message">
+                <p>Olá, tudo bem?</p>
+            </div>
+            <div class="message">
+                <p>Quer receber uma proposta personalizada para sua empresa?</p>
+            </div>
+            <a href="https://wa.me/5511975565299" target="_blank" class="cta-button">Sim, quero receber</a>
+        </div>
+    </div>
+
+    <script>
+        // Seleciona os elementos
+        const whatsappButton = document.querySelector('#whatsapp-btn');
+        const chatbotContainer = document.querySelector('#chatbot-container');
+        const closeButton = document.querySelector('#close-btn');
+
+        // Exibe o chatbot ao clicar no botão de WhatsApp
+        whatsappButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            chatbotContainer.style.display = 'flex';
+        });
+
+        // Fecha o chatbot ao clicar no botão de fechar
+        closeButton.addEventListener('click', () => {
+            chatbotContainer.style.display = 'none';
+        });
+    </script>
+
+
 
 <!-- #Adicionar efeito de Pulsar  -->
 <style>

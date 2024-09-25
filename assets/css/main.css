@@ -7,17 +7,17 @@
 
 /* Global Colors */
 :root { 
-  --background-color: #d6f5d4; 
-  --default-color: #364d59;
-  --heading-color: #52565e;
+  --background-color: #0e320e; 
+  --default-color: #ffffff;
+  --heading-color: #37e471;
   --accent-color: #3c9c64;
-  --surface-color: #ffffff;
+  --surface-color: #65b15e;
   --contrast-color: #ffffff;
 }
 
 /* Nav Menu Colors */
 :root {
-  --nav-color: rgb(244, 255, 244);  
+  --nav-color: rgb(255, 244, 246);  
   --nav-hover-color: #06fa43; 
   --nav-mobile-background-color: #ffffff; 
   --nav-dropdown-background-color: #ffffff;
@@ -28,8 +28,8 @@
 /* Color Presets */
 
 .light-background {
-  --background-color: #f4f7f6;
-  --surface-color: #ffffff;
+  --background-color: #0c7753;
+  --surface-color: #050404;
 }
 
 .dark-background {
@@ -168,9 +168,9 @@ h6 {
 ------------------------------*/
 .scrolled .header {
   --background-color: rgba(255, 255, 255, 0.95);
-  --heading-color: #3c3c3c;
-  --nav-color: #3c3c3c;
-  --nav-hover-color: #3c3c3c;
+  --heading-color: #000000;
+  --nav-color: #000000;
+  --nav-hover-color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -2866,3 +2866,62 @@ section,
 .whatsapp-button img:hover {
   transform: scale(1.1);
 }
+
+.services-section {
+  text-align: center;
+  background-color: #1d4228; /* Altere conforme necessário */
+  padding: 40px 0;
+}
+
+.services-section h2 {
+  color: #66be2c; /* Cor do título "O que fazemos" */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: rgb(60, 93, 64);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgb(29, 31, 30);
+}
+
+.service-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.service-card button {
+  background-color: #ffffff;
+  border: 2px solid hsl(97, 19%, 26%);
+  color: #56823b;
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.service-card button:hover {
+  background-color: #8de05b;
+  color: white;
+}
+
+
