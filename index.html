@@ -533,64 +533,70 @@
     
         </section><!-- /Alt Services Section -->
 
-    <!-- Constructions Section -->
+<!-- Constructions Section -->
 <section id="constructions" class="constructions section">
-
   <style>
     /* Definir o texto e título totalmente em branco */
     .text-white {
       color: white;
     }
+
+    /* Estilo da linha do tempo na horizontal */
+    .timeline {
+      display: flex;
+      flex-direction: row; /* Organiza itens na horizontal */
+      justify-content: space-around;
+      gap: 20px;
+      overflow-x: auto; /* Permite rolagem horizontal */
+      padding: 20px;
+      background-color: #194d25; /* Fundo verde escuro */
+      border-radius: 15px;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    /* Estilo de cada item da linha do tempo */
+    .timeline-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      width: 240px;
+      text-align: center;
+    }
+
+    .card-bg img {
+      width: 100%; /* Imagem ocupa toda a largura do card */
+      height: auto;
+      display: block;
+    }
+
+    .card-body {
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .timeline {
+        flex-direction: column; /* Empilha itens na vertical em telas menores */
+        align-items: center;
+      }
+    }
   </style>
-  
+
   <!-- Section Title -->
   <div class="container section-title text-white" data-aos="fade-up">
     <h2>Nossos prêmios</h2>
     <p>O Prêmio Talento Engenharia Estrutural é uma iniciativa da Gerdau e da ABECE que tem como objetivo reconhecer e premiar os profissionais. Considerado o evento mais importante da engenharia estrutural do país, a cada ano reforça e destaca os maiores talentos da engenharia estrutural brasileira.</p>
   </div><!-- End Section Title -->
-  
+
   <div class="container">
-    <div class="timeline d-flex justify-content-between overflow-auto" data-aos="fade-left" data-aos-duration="2000">
-  
-      <div class="timeline-item text-center">
+    <div class="timeline" data-aos="fade-left" data-aos-duration="2000">
+      
+      <div class="timeline-item">
         <div class="card-item text-white">
-          <div class="card-bg"><img src="assets/img/2015.JPG" alt=""></div>
-          <div class="card-body">
-            <h4 class="card-title">2015</h4>
-            <p>Prêmio Talento Engenharia Estrutural</p>
-            <p>Projeto vencedor</p>
-            <p>Casa Barco - Ilhabela/SP</p>
-          </div>
-        </div>
-      </div><!-- End Timeline Item -->
-  
-      <div class="timeline-item text-center">
-        <div class="card-item text-white">
-          <div class="card-bg"><img src="assets/img/2018.jpg" alt=""></div>
-          <div class="card-body">
-            <h4 class="card-title">2018</h4>
-            <p>Prêmio Talento Engenharia Estrutural</p>
-            <p>Menção honrosa</p>
-            <p>Saint Gobain</p>
-          </div>
-        </div>
-      </div><!-- End Timeline Item -->
-  
-      <div class="timeline-item text-center">
-        <div class="card-item text-white">
-          <div class="card-bg"><img src="assets/img/2022.JPG" alt=""></div>
-          <div class="card-body">
-            <h4 class="card-title">2022</h4>
-            <p>Prêmio Talento Engenharia Estrutural</p>
-            <p>Projeto vencedor</p>
-            <p>Casa Berkut Baroneza</p>
-          </div>
-        </div>
-      </div><!-- End Timeline Item -->
-  
-      <div class="timeline-item text-center">
-        <div class="card-item text-white">
-          <div class="card-bg"><img src="assets/img/2023.jpg" alt=""></div>
+          <div class="card-bg"><img src="assets/img/2023.jpg" alt="Edifício Luna"></div>
           <div class="card-body">
             <h4 class="card-title">2023</h4>
             <p>Prêmio Talento Engenharia Estrutural</p>
@@ -599,6 +605,58 @@
           </div>
         </div>
       </div><!-- End Timeline Item -->
+
+      <div class="timeline-item">
+        <div class="card-item text-white">
+          <div class="card-bg"><img src="assets/img/2022.JPG" alt="Casa Berkut"></div>
+          <div class="card-body">
+            <h4 class="card-title">2022</h4>
+            <p>Prêmio Talento Engenharia Estrutural</p>
+            <p>Projeto vencedor</p>
+            <p>Casa Berkut Baroneza</p>
+          </div>
+        </div>
+      </div><!-- End Timeline Item -->
+
+      <div class="timeline-item">
+        <div class="card-item text-white">
+          <div class="card-bg"><img src="assets/img/2018.jpg" alt="Saint Gobain"></div>
+          <div class="card-body">
+            <h4 class="card-title">2018</h4>
+            <p>Prêmio Talento Engenharia Estrutural</p>
+            <p>Menção honrosa</p>
+            <p>Saint Gobain</p>
+          </div>
+        </div>
+      </div><!-- End Timeline Item -->
+
+      <div class="timeline-item">
+        <div class="card-item text-white">
+          <div class="card-bg"><img src="assets/img/2017.jpg" alt="Forma Itaim"></div>
+          <div class="card-body">
+            <h4 class="card-title">2017</h4>
+            <p>Menção Honrosa</p>
+            <p>Categoria: Edificações</p>
+            <p>Forma Itaim - São Paulo/SP</p>
+          </div>
+        </div>
+      </div><!-- End Timeline Item -->
+
+      <div class="timeline-item">
+        <div class="card-item text-white">
+          <div class="card-bg"><img src="assets/img/2015.JPG" alt="Casa Barco"></div>
+          <div class="card-body">
+            <h4 class="card-title">2015</h4>
+            <p>Prêmio Talento Engenharia Estrutural</p>
+            <p>Projeto vencedor</p>
+            <p>Casa Barco - Ilhabela/SP</p>
+          </div>
+        </div>
+      </div><!-- End Timeline Item -->
+
+    </div><!-- End Timeline -->
+  </div><!-- End Container -->
+</section>
   
     </div><!-- End Timeline -->
   </div><!-- End Container -->

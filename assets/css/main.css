@@ -2924,4 +2924,77 @@ section,
   color: white;
 }
 
+.timeline {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px 0;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: white;
+  z-index: -1;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.timeline-item img {
+  width: 240px;
+  height: 240px;
+  border-radius: 12px;
+  margin-right: 20px;
+  background: white;
+  object-fit: cover;
+}
+
+.timeline-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.timeline-item h4 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+      width: 100%;
+  }
+
+  .timeline-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .timeline-item img {
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+}
+
 
